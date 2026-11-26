@@ -16,7 +16,7 @@ cd lean
 lake build
 ```
 
-The package builds with `autoImplicit = false` and `warningAsError = true`. Its root module (`Cordis.lean`) runs `Cordis.AxiomAudit.check` across all 262 modules, verifying that every declaration depends only on Lean's standard axioms (`propext`, `Classical.choice`, `Quot.sound`).
+The package builds with `autoImplicit = false` and `warningAsError = true`. Its root module (`Cordis.lean`) runs `Cordis.AxiomAudit.check` across all 267 modules, verifying that every declaration depends only on Lean's standard axioms (`propext`, `Classical.choice`, `Quot.sound`).
 
 ## License
 
