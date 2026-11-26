@@ -1344,8 +1344,9 @@ theorem confluence_of_root_only_input {rightLength : Nat}
   exact (GuardedConfluence.compare_surviving_endpoints observe first second firstErased secondErased
     firstRelated secondRelated stable firstOpen secondOpen firstQuiet secondQuiet input recovery commutative respect).1
 
-/-- If the original history has no removals, neither does its retained
-history after excision. The canonical exchange path then needs no redraw. -/
+/-- Normalization for a history with no removals. The statement is the
+general certificate; it does not record that the retained history also has
+no removals, or that the canonical exchange path needs no redraw. -/
 theorem normalize_without_removals (trace : Trace (encodeProgram typedProgram) last)
     (quiet : Progress.Quiet (trace.state last)) (stable : ChildContinuations (encodeProgram typedProgram))
     (noRemovals : ∀ cut, cut < last → ∀ name, trace.event cut ≠ .command (.remove name))
