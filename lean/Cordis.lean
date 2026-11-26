@@ -71,6 +71,8 @@ import Cordis.Repairs.GuardedReservationExample
 import Cordis.Repairs.StagePriorityExample
 import Cordis.Repairs.PinnedRedrawExample
 import Cordis.Repairs.EntangledCleanupBoundary
+import Cordis.Repairs.CounterContracts
+import Cordis.Repairs.CounterConfluenceExample
 -- Audit all imported project declarations and their dependencies.
 import Cordis.AxiomAudit
 
